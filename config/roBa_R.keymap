@@ -1,0 +1,29 @@
+#include "roBa_L.keymap"
+
+#include "boards/shields/Test/roBa_R.overlay"
+&trackball {
+    arrows {
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+
+    volume {
+        layers = <1>;
+        bindings =
+                <&none>,
+                <&none>,
+                <&kp C_VOLUME_UP>,
+                <&kp C_VOLUME_DOWN>;
+
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+};
