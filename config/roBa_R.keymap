@@ -2,6 +2,10 @@
 
 #include "boards/shields/Test/roBa_R.overlay"
 &trackball {
+    automouse-layer = <MOUSE>;
+    scroll-layers = <SCROLL>;
+    // snipe-layers = <3>;
+
     arrows {
         layers = <3>;
         bindings =
