@@ -63,15 +63,13 @@
             tapping-term-ms = <200>;
         };
 
-        scroll_up_down: scroll_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            // 追加: スクロールのタップ時間を設定 (20ms)
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
-            label = "scroll_up_down";
         };
     };
 
@@ -86,7 +84,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&new_behavior SCRL_UP SCRL_DOWN>;
         };
 
         FUNCTION {
