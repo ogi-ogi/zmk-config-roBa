@@ -23,24 +23,64 @@
             key-positions = <11 12>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <10 11>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <0 1>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        cavve {
+            bindings = <&cavve>;
+            key-positions = <22 23>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        cz {
+            bindings = <&kp LC(Z)>;
+            key-positions = <23 24>;
+        };
+
+        cy {
+            bindings = <&kp LC(Y)>;
+            key-positions = <36 35>;
+        };
+
+        kasouDchange {
+            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+            key-positions = <2 1>;
+        };
+
+        gyoutyousei {
+            bindings = <&gyoutyousei>;
+            key-positions = <25 24>;
+        };
+
+        gyousyoukyo {
+            bindings = <&gyousyoukyo>;
+            key-positions = <3 2>;
+        };
+
+        altvector {
+            bindings = <&kp LA(DOWN_ARROW)>;
+            key-positions = <13 12>;
+        };
+
+        screensnap {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <7 8>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <19 20>;
+        };
+
+        snaptextcopy {
+            bindings = <&kp LS(LC(C))>;
+            key-positions = <32 31>;
         };
     };
 
@@ -50,6 +90,27 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        cavve: cavve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(V)) &kp V &kp ENTER>;
+            label = "CAVVE";
+        };
+
+        gyoutyousei: gyoutyousei {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LEFT_ALT &kp H &kp O &kp I>;
+            label = "GYOUTYOUSEI";
+        };
+
+        gyousyoukyo: gyousyoukyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp D &kp R>;
+            label = "GYOUSYOUKYO";
         };
     };
 
@@ -126,7 +187,7 @@
 &kp SEMICOLON         &kp RIGHT_BRACKET      &kp LANG_ZENKAKUHANKAKU      &trans                   &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         MOUSE {
