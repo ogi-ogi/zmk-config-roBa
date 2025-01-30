@@ -78,7 +78,7 @@
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
             tap-ms = <20>;
-            label = "scroll_up_down";
+            label = "croll_right_left";
         };
     };
 
