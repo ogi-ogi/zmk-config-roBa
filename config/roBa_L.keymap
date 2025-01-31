@@ -139,7 +139,7 @@
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
-            label = "croll_right_left";
+            label = "scroll_right_left";
         };
 
         force_layer_2: behavior {
