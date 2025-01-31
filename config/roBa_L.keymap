@@ -136,10 +136,16 @@
         scroll_right_left: scroll_right_left {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
             tap-ms = <20>;
             label = "croll_right_left";
+        };
+
+        force_layer_2: behavior {
+            compatible = "zmk,behavior";
+            label = "Force Layer 2";
+            binding = <&lt 2 NONE>;  // 押下中にレイヤー2へ移行
         };
     };
 
@@ -150,7 +156,7 @@
             bindings = <
 &kp Q             &kp W                      &kp E                      &kp R                        &kp T                                                                &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &lt 2 S                    &kp D                      &kp F                        &kp G            &kp LC(W)                          &kp LA(F4)       &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V                        &lt 6 B          &mo 2                              &kp LA(LC(TAB))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V                        &lt 6 B          &force_layer_2                     &kp LA(LC(TAB))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt_to_layer_0 3 INT_HENKAN  &mt LCTRL SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE    &lt 3 ENTER                             &kp LS(MINUS)
             >;
 
