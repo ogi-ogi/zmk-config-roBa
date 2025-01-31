@@ -126,7 +126,7 @@
 
         lt_to_layer_0_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
+            label = "LAYER_TAP_TO_0_0";
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
