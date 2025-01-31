@@ -48,8 +48,8 @@
             key-positions = <36 35>;
         };
 
-        kasouDchange {
-            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+        desktop {
+            bindings = <&kp LG(D)>;
             key-positions = <2 1>;
         };
 
@@ -149,7 +149,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W                      &kp E                      &kp R                        &kp T                                                                &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &lt 2 S                    &kp D                      &kp F                        &kp G            &kp LC(W)                          &kp LA(F4)       &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
+&kp A             &lt_to_layer_0 2 S         &kp D                      &kp F                        &kp G            &kp LC(W)                          &kp LA(F4)       &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V                        &lt 6 B          &mo 2                              &kp LA(LC(TAB))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt_to_layer_0 3 INT_HENKAN  &mt LCTRL SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE    &lt 3 ENTER                             &kp LS(MINUS)
             >;
@@ -181,10 +181,10 @@
 
         num {
             bindings = <
-&kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)             &kp LS(NUMBER_4)         &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
-&kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL                    &kp LS(EQUAL)            &kp LEFT_BRACKET         &trans      &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(LANG_ZENKAKUHANKAKU)  &kp LG(LS(RIGHT_ARROW))  &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&kp SEMICOLON         &kp RIGHT_BRACKET      &kp LANG_ZENKAKUHANKAKU      &trans                   &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
+&kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)          &kp LS(NUMBER_4)  &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
+&kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL                 &kp LS(EQUAL)     &kp LEFT_BRACKET         &trans      &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
+&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)  &trans            &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&kp SEMICOLON         &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH      &trans            &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
