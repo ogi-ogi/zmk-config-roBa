@@ -92,6 +92,13 @@
             label = "TO_LAYER_0";
         };
 
+        to_layer_2: to_layer_2 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_2";
+        };
+
         cavve: cavve {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -124,10 +131,10 @@
             tapping-term-ms = <200>;
         };
 
-        lt_to_layer_0_0: lt_to_layer_0 {
+        lt_to_layer_2: lt_to_layer_2 {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0_0";
-            bindings = <&mo>, <&to_layer_0>;
+            label = "LAYER_TAP_TO_2";
+            bindings = <&mo>, <&to_layer_2>;
 
             #binding-cells = <2>;
             tapping-term-ms = <0>;
