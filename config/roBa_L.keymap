@@ -141,12 +141,6 @@
             tap-ms = <20>;
             label = "scroll_right_left";
         };
-
-        force_layer_2: behavior {
-            compatible = "zmk,behavior";
-            label = "Force Layer 2";
-            binding = <&lt 2 NONE>;  // 押下中にレイヤー2へ移行
-        };
     };
 
     keymap {
