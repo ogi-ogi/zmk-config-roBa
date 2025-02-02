@@ -119,6 +119,20 @@
             bindings = <&kp LEFT_ALT &kp H &kp D &kp R>;
             label = "GYOUSYOUKYO";
         };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET>;
+            label = "BRACKETS";
+        };
+
+        curlybrackets: curlybrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACE>;
+            label = "CURLYBRACKETS";
+        };
     };
 
     behaviors {
@@ -181,7 +195,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DEL  &trans                          &kp F12
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         sub1 {
@@ -192,18 +206,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         num {
             bindings = <
-&kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)          &kp LS(NUMBER_4)  &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
-&kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL                 &kp LS(EQUAL)     &kp LEFT_BRACKET         &trans      &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)  &trans            &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&kp SEMICOLON         &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH      &trans            &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
+&kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
+&kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL         &kp LS(EQUAL)     &kp LEFT_BRACKET         &trans      &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
+&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &curlybrackets    &trans            &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&kp SEMICOLON         &kp RIGHT_BRACKET      &brackets         &trans            &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
