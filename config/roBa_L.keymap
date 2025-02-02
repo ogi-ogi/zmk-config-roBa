@@ -213,8 +213,8 @@
             bindings = <
 &kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
 &kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL         &kp LS(EQUAL)     &kp LEFT_BRACKET         &trans      &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &curlybrackets    &trans            &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&kp SEMICOLON         &kp RIGHT_BRACKET      &brackets         &trans            &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
+&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp F24           &trans            &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&kp SEMICOLON         &kp RIGHT_BRACKET      &kp F23           &trans            &trans                   &trans      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LA(TAB)) LC(LA(LS(TAB)))>;
