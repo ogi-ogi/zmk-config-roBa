@@ -48,8 +48,8 @@
             key-positions = <36 35>;
         };
 
-        desktop {
-            bindings = <&kp LG(D)>;
+        win_arrow_L {
+            bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <2 1>;
         };
 
@@ -68,8 +68,8 @@
             key-positions = <13 12>;
         };
 
-        screensnap {
-            bindings = <&kp LG(LS(S))>;
+        win_arrow_R {
+            bindings = <&kp LG(LS(RIGHT_ARROW))>;
             key-positions = <7 8>;
         };
 
@@ -78,8 +78,8 @@
             key-positions = <19 20>;
         };
 
-        snaptextcopy {
-            bindings = <&kp LS(LC(C))>;
+        screensnap {
+            bindings = <&kp LS(LC(S))>;
             key-positions = <32 31>;
         };
     };
