@@ -22,10 +22,10 @@
     win arrows {
         layers = <1>;
         bindings =
-            <&kp LG(KC_RIGHT)>,
-            <&kp LG(KC_LEFT)>,
-            <&kp LG(KC_UP)>,
-            <&kp LG(KC_DOWN)>;
+            <&kp LG(RIGHT)>,
+            <&kp LG(LEFT)>,
+            <&kp LG(UP)>,
+            <&kp LG(DOWN)>;
 
         tick = <40>;
         wait-ms = <5>;
