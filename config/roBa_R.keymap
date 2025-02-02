@@ -22,10 +22,10 @@
     win arrows {
         layers = <1>;
         bindings =
-            <&kp LGUI(KC_RIGHT)>,
-            <&kp LGUI(KC_LEFT)>,
-            <&kp LGUI(KC_UP)>,
-            <&kp LGUI(KC_DOWN)>;
+            <&kp LG(KC_RIGHT)>,
+            <&kp LG(KC_LEFT)>,
+            <&kp LG(KC_UP)>,
+            <&kp LG(KC_DOWN)>;
 
         tick = <40>;
         wait-ms = <5>;
