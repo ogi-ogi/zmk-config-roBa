@@ -48,11 +48,6 @@
             key-positions = <36 35>;
         };
 
-        win_arrow {
-            bindings = <&new_macro>;
-            key-positions = <2 1>;
-        };
-
         gyoutyousei {
             bindings = <&gyoutyousei>;
             key-positions = <25 24>;
