@@ -49,7 +49,7 @@
         };
 
         win_arrow {
-            bindings = <&mo3 &lgui>;
+            bindings = <&MO3 &LGUI>;
             key-positions = <2 1>;
         };
 
