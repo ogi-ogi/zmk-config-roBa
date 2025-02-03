@@ -63,8 +63,8 @@
             key-positions = <13 12>;
         };
 
-        saikou_saikou {
-            bindings = <&kp LG(RIGHT_ARROW)>;
+        app_togl_R {
+            bindings = <&kp LC(LA(TAB))>;
             key-positions = <7 8>;
         };
 
@@ -81,6 +81,11 @@
         L3_win {
             bindings = <&new_macro 3 LEFT_WIN>;
             key-positions = <1 2>;
+        };
+
+        app_togl_L {
+            bindings = <&kp LC(LA(LS(TAB)))>;
+            key-positions = <7 6>;
         };
     };
 
