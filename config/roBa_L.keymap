@@ -48,9 +48,10 @@
             key-positions = <36 35>;
         };
 
-        win_arrow_L {
-            bindings = <&kp LG(LEFT_ARROW)>;
+        win_arrow {
+            bindings = <&kp LEFT_WIN>;
             key-positions = <2 1>;
+            layers = <3>;
         };
 
         gyoutyousei {
@@ -68,8 +69,8 @@
             key-positions = <13 12>;
         };
 
-        win_arrow_R {
-            bindings = <&kp LG(LS(RIGHT_ARROW))>;
+        saikou_saikou {
+            bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <7 8>;
         };
 
