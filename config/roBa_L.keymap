@@ -114,7 +114,7 @@
         };
 
         arrow {
-            bindings = <&none>;
+            bindings = <&mo 3>;
             key-positions = <2 3>;
         };
     };
