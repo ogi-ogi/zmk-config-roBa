@@ -244,8 +244,8 @@
         FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW      &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW      &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &kp DEL       &trans                          &trans
             >;
 
