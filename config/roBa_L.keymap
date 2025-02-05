@@ -65,7 +65,7 @@
 
         app_togl_R {
             bindings = <&kp LC(LA(TAB))>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         f2 {
@@ -105,12 +105,12 @@
 
         tab_change_L {
             bindings = <&kp LC(PG_UP)>;
-            key-positions = <5 6>;
+            key-positions = <19 18>;
         };
 
         tab_change_R {
             bindings = <&kp LC(PAGE_DOWN)>;
-            key-positions = <8 9>;
+            key-positions = <20 21>;
         };
 
         arrow {
