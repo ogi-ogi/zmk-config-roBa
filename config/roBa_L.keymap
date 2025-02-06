@@ -65,7 +65,7 @@
 
         app_togl_R {
             bindings = <&kp LC(LA(TAB))>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
         };
 
         f2 {
@@ -100,17 +100,17 @@
 
         shft_ctrl {
             bindings = <&kp LS(LCTRL)>;
-            key-positions = <31 32>;
+            key-positions = <19 18>;
         };
 
         tab_change_L {
             bindings = <&kp LC(PG_UP)>;
-            key-positions = <19 18>;
+            key-positions = <31 30>;
         };
 
         tab_change_R {
             bindings = <&kp LC(PAGE_DOWN)>;
-            key-positions = <20 21>;
+            key-positions = <31 32>;
         };
 
         arrow {
