@@ -50,22 +50,22 @@
 
         gyoutyousei {
             bindings = <&gyoutyousei>;
-            key-positions = <25 24>;
+            key-positions = <25 26>;
         };
 
         gyousyoukyo {
             bindings = <&gyousyoukyo>;
-            key-positions = <3 2>;
+            key-positions = <3 4>;
         };
 
         altvector {
             bindings = <&kp LA(DOWN_ARROW)>;
-            key-positions = <13 12>;
+            key-positions = <13 14>;
         };
 
         app_togl_R {
             bindings = <&kp LC(LA(TAB))>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         f2 {
@@ -75,7 +75,7 @@
 
         screensnap {
             bindings = <&kp LS(LG(S))>;
-            key-positions = <32 31>;
+            key-positions = <17 18>;
         };
 
         L3_win {
@@ -86,6 +86,36 @@
         app_togl_L {
             bindings = <&kp LC(LA(LS(TAB)))>;
             key-positions = <7 6>;
+        };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        textshot {
+            bindings = <&kp LS(LC(C))>;
+            key-positions = <29 30>;
+        };
+
+        shft_ctrl {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <31 32>;
+        };
+
+        tab_change_L {
+            bindings = <&kp LC(PG_UP)>;
+            key-positions = <19 18>;
+        };
+
+        tab_change_R {
+            bindings = <&kp LC(PAGE_DOWN)>;
+            key-positions = <20 21>;
+        };
+
+        arrow {
+            bindings = <&mo 3>;
+            key-positions = <2 3>;
         };
     };
 
@@ -202,10 +232,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                      &kp E                      &kp R                        &kp T                                                              &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S                      &kp D                      &kp F                        &kp G            &kp ENTER                          &kp LG(D)      &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V                        &lt 6 B          &kp LC(W)                          &kp LA(F4)     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt_to_layer_0 3 INT_HENKAN  &mt LCTRL SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp LS(MINUS)
+&kp Q             &kp W                      &kp E                      &kp R                        &kp T                                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S                      &kp D                      &kp F                        &kp G            &kp LC(W)                          &kp LA(F4)         &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
+&mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V                        &lt 6 B          &lt 1 LEFT_ARROW                   &lt 1 RIGHT_ARROW  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt_to_layer_0 3 INT_HENKAN  &mt LCTRL SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE      &lt 3 ENTER                             &kp LS(MINUS)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -213,10 +243,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &kp DEL  &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW      &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp DEL       &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN)>;
@@ -246,10 +276,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans                            &trans                                             &trans  &trans    &trans    &trans    &mkp MB4
-&trans  &trans  &trans  &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &trans    &trans    &trans
-&trans  &trans  &trans  &lt_to_layer_0 3 INTERNATIONAL_4  &trans  &lt_to_layer_0 1 INT_MUHENKAN      &trans  &trans                                &trans
+&trans  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                     &trans                                             &trans  &trans    &trans    &trans    &mkp MB4
+&trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &trans    &trans    &trans
+&trans  &trans         &trans         &lt_to_layer_0 3 INTERNATIONAL_4  &trans  &lt_to_layer_0 1 INT_MUHENKAN      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
