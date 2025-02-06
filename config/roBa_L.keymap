@@ -276,9 +276,9 @@
 
         MOUSE {
             bindings = <
-&trans  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                     &trans                                             &trans  &trans    &trans    &trans    &mkp MB4
+&trans  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                     &trans                                             &trans  &trans    &trans    &trans    &trans
 &trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &trans    &trans    &trans
+&trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &trans    &trans    &mkp MB5
 &trans  &trans         &trans         &lt_to_layer_0 3 INTERNATIONAL_4  &trans  &lt_to_layer_0 1 INT_MUHENKAN      &trans  &trans                                &trans
             >;
 
