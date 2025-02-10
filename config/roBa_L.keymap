@@ -202,7 +202,7 @@
             tapping-term-ms = <200>;
         };
 
-        lt_to_layer_0: lt_to_layer_0 {
+        lt_to_layer_0_CTRL: lt_to_layer_0_CTRL {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0_kp";
             bindings = <&kp LCTRL>, <&to_layer_0>; 
