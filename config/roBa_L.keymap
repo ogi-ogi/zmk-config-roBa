@@ -205,7 +205,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0_kp";
-            bindings = <&kp>, <&to_layer_0>; 
+            bindings = <&kp LCTRL>, <&to_layer_0>; 
             
             #binding-cells = <2>;
             tapping-term-ms = <200>;
