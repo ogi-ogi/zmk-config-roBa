@@ -25,27 +25,27 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <23 24>;
+            key-positions = <11 10>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <2 1>;
+            key-positions = <23 22>;
         };
 
         cavve {
             bindings = <&cavve>;
-            key-positions = <35 36>;
+            key-positions = <35 34>;
         };
 
         cz {
             bindings = <&kp LC(Z)>;
-            key-positions = <1 0>;
+            key-positions = <24 23>;
         };
 
         cy {
             bindings = <&kp LC(Y)>;
-            key-positions = <10 11>;
+            key-positions = <36 35>;
         };
 
         gyoutyousei {
