@@ -233,7 +233,7 @@
 &kp Q             &kp W                      &kp E                      &kp R                        &kp T                                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S                      &kp D                      &kp F                        &kp G            &kp LC(W)                          &kp LA(F4)         &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V                        &lt 6 B          &kp LEFT_ARROW                     &lt 1 RIGHT_ARROW  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt_to_layer_0 3 INT_HENKAN  &mt LCTRL SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE      &lt 3 ENTER                             &kp LS(MINUS)
+&kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt_to_layer_0 1 INT_HENKAN  &mt LCTRL SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE      &lt 3 ENTER                             &kp LS(DELETE)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -265,7 +265,7 @@
             bindings = <
 &kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)                  &kp LS(N5)                                                              &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
 &kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL         &kp LS(EQUAL)                     &kp LEFT_BRACKET         &trans                             &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp F24           &trans                            &kp LS(INTERNATIONAL_1)  &trans                             &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp F24           &kp LS(MINUS)                     &kp LS(INTERNATIONAL_1)  &trans                             &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
 &kp SEMICOLON         &kp RIGHT_BRACKET      &kp F23           &lt_to_layer_0 3 INTERNATIONAL_4  &trans                   &lt_to_layer_0 1 INT_MUHENKAN      &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
             >;
 
