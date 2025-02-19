@@ -40,12 +40,12 @@
 
         cz {
             bindings = <&kp LC(Z)>;
-            key-positions = <24 23>;
+            key-positions = <1 2>;
         };
 
         cy {
             bindings = <&kp LC(Y)>;
-            key-positions = <36 35>;
+            key-positions = <3 2>;
         };
 
         gyoutyousei {
@@ -95,12 +95,12 @@
 
         tab_change_L {
             bindings = <&kp LC(PG_UP)>;
-            key-positions = <1 2>;
+            key-positions = <24 23>;
         };
 
         tab_change_R {
             bindings = <&kp LC(PAGE_DOWN)>;
-            key-positions = <2 3>;
+            key-positions = <24 25>;
         };
 
         winL {
