@@ -35,7 +35,7 @@
 
         cavve {
             bindings = <&cavve>;
-            key-positions = <35 34>;
+            key-positions = <12 13>;
         };
 
         cz {
