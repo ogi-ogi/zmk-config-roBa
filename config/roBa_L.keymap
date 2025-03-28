@@ -251,9 +251,9 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <2>;
             bindings = <
-                &macro_press_release &kp C &kp LC &kp C
-                &macro_press_release &kp V &kp LC &kp V
-                &macro_press_release &macro CAVVE
+                &macro_press_release &kp C &kp LC C   /* シングルタップ: CTRL+C */
+                &macro_press_release &kp V &kp LC V   /* ダブルタップ: CTRL+V */
+                &macro_press_release &macro CAVVE     /* トリプルタップ: CAVVEマクロ */
             >;
             label = "custom_tap_dance";
         };
