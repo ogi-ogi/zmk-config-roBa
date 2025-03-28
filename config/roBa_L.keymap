@@ -246,17 +246,6 @@
             #binding-cells = <1>;
             release-after-ms = <250>;
         };
-
-        custom_tap_dance: custom_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <2>;
-            bindings = <
-                &macro_press_release &kp C &kp LC C   /* シングルタップ: CTRL+C */
-                &macro_press_release &kp V &kp LC V   /* ダブルタップ: CTRL+V */
-                &macro_press_release &macro CAVVE     /* トリプルタップ: CAVVEマクロ */
-            >;
-            label = "custom_tap_dance";
-        };
     };
 
     keymap {
