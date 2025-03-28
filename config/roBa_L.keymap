@@ -251,7 +251,7 @@
 &trans  &trans  &trans  &trans  &trans                                              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                             &trans   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                             &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &eager_tap_dance LANGUAGE_1 1      &kp DEL  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &kp DEL  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
