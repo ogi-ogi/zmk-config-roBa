@@ -237,10 +237,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                      &kp E                      &kp R              &kp T                                                   &kp Y      &kp U  &kp I      &kp O    &kp P
-&lt 4 A           &kp S                      &kp D                      &kp F              &kp G            &kp LC(W)             &kp LA(F4)       &kp H      &kp J  &kp K      &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V              &lt 6 B          &kp INT_MUHENKAN      &kp INT_HENKAN   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt 1 LA(LC(TAB))  &mt LCTRL SPACE  &lt 3 DELETE          &lt 3 BACKSPACE  &kp ENTER                             &mt LCTRL SPACE
+&kp Q             &kp W                      &kp E                      &kp R              &kp T                                               &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&lt 4 A           &kp S                      &kp D                      &kp F              &kp G            &trans            &trans           &kp H      &kp J  &kp K      &kp L    &lt 4 MINUS
+&mt LEFT_SHIFT Z  &kp X                      &kp C                      &kp V              &lt 6 B          &trans            &trans           &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp APOSTROPHE    &mt LEFT_WIN LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &lt 1 LA(LC(TAB))  &mt LCTRL SPACE  &lt 3 DELETE      &lt 3 BACKSPACE  &kp ENTER                             &mt LCTRL SPACE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -281,10 +281,10 @@
 
         MOUSE {
             bindings = <
-&trans  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                     &trans                                             &trans  &trans    &trans    &trans    &trans
-&trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB2  &trans
-&trans  &trans         &trans         &trans                            &trans  &trans                             &trans  &trans  &mkp MB1  &trans    &trans    &trans
-&trans  &trans         &trans         &lt_to_layer_0 3 INTERNATIONAL_4  &trans  &lt_to_layer_0 1 INT_MUHENKAN      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                             &trans         &trans    &trans    &kp LC(W)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &mkp MB5       &mkp MB4  &mkp MB3  &mkp MB2   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LA(F4)     &mkp MB1  &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(PG_UP)  &kp LC(PG_DN)                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
