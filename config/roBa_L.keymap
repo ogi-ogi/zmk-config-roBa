@@ -241,8 +241,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         sub1 {
