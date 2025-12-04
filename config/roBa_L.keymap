@@ -44,12 +44,12 @@
 
         henkan {
             bindings = <&kp INT4>;
-            key-positions = <1 2>;
+            key-positions = <7 8>;
         };
 
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
-            key-positions = <7 8>;
+            key-positions = <1 2>;
         };
 
         cc {
