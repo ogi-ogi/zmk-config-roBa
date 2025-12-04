@@ -258,9 +258,9 @@
 
         num {
             bindings = <
-&kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
+&trans                &kp LS(NUMBER_2)       &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT
 &kp LS(NUMBER_6)      &kp LS(NUMBER_7)       &kp EQUAL         &kp LS(EQUAL)     &kp LEFT_BRACKET         &trans      &trans      &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp F24           &kp LS(MINUS)     &kp LS(INTERNATIONAL_1)  &trans      &trans      &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp F24           &kp LS(MINUS)     &kp LS(INTERNATIONAL_1)  &trans      &trans      &kp LS(PERCENT)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
 &kp SEMICOLON         &kp RIGHT_BRACKET      &kp F23           &none             &trans                   &none       &kp KP_DOT  &kp KP_NUMBER_0                                                     &trans
             >;
 
@@ -269,10 +269,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &trans         &trans    &trans    &kp LC(W)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &mkp MB5       &mkp MB4  &mkp MB3  &mkp MB2   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LA(F4)     &mkp MB1  &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(PG_UP)  &kp LC(PG_DN)                                 &trans
+&trans  &kp HOME        &kp UP_ARROW    &kp END             &trans                                                      &trans         &trans    &trans    &kp LC(W)  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans              &trans                   &trans         &mkp MB5       &mkp MB4  &mkp MB3  &mkp MB2   &trans
+&trans  &trans          &trans          &trans              &kp LG(UP_ARROW)    &trans                   &trans         &kp LA(F4)     &mkp MB1  &trans    &trans     &trans
+&trans  &trans          &trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LC(PG_UP)  &kp LC(PG_DN)                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
