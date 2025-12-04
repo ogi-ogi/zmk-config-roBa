@@ -211,6 +211,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_4)>, <&kp INT3>, <&kp EQUAL>;
         };
+
+        new_behavior8: new_behavior8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR8";
+            #binding-cells = <0>;
+            bindings = <&lt 4 MINUS>, <&kp LS(INT1)>;
+        };
     };
 
     keymap {
@@ -218,10 +225,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W   &kp E   &kp R   &kp T                                                  &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S   &kp D   &kp F   &kp G               &trans            &trans           &kp H      &kp J  &kp K      &kp L    &lt 4 MINUS
-&mt LEFT_SHIFT Z    &kp X   &kp C   &kp V   &lt 6 B             &trans            &trans           &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&trans              &trans  &trans  &trans  &mt LEFT_ALT SPACE  &lt 3 DELETE      &lt 3 BACKSPACE  &kp ENTER                             &trans
+&kp Q               &kp W           &kp E           &kp R   &kp T                                                    &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S           &kp D           &kp F   &kp G               &lt 1 LS(S)         &new_behavior1   &kp H      &kp J  &kp K      &kp L    &new_behavior8
+&mt LEFT_SHIFT Z    &kp X           &kp C           &kp V   &lt 6 B             &new_behavior2      &new_behavior3   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&new_behavior4      &new_behavior5  &new_behavior6  &trans  &mt LEFT_ALT SPACE  &lt 3 DELETE        &lt 3 BACKSPACE  &kp ENTER                             &new_behavior7
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -229,13 +236,13 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans    &trans    &trans     &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &kp UP    &trans     &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans  &trans      &kp DEL  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         sub1 {
