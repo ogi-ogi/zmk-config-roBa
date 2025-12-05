@@ -146,7 +146,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NEW_BEHAVIOR8";
             #binding-cells = <0>;
-            bindings = <&lt 4 MINUS>, <&mt LEFT_SHIFT LS(INT1)>;
+            bindings = <&lt 4 MINUS>, <&lt 1 LS(INT1)>;
         };
 
         new_behavior9: new_behavior9 {
