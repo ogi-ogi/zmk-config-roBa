@@ -170,10 +170,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E           &kp R   &kp T                                                    &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S           &kp D           &kp F   &kp G               &lt 1 LS(S)         &new_behavior1   &kp H      &kp J  &kp K      &kp L    &new_behavior8
-&mt LEFT_SHIFT Z    &kp X           &kp C           &kp V   &lt 6 B             &new_behavior2      &new_behavior3   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&new_behavior4      &new_behavior5  &new_behavior6  &trans  &mt LEFT_ALT SPACE  &lt 3 DELETE        &lt 3 BACKSPACE  &kp ENTER                             &new_behavior7
+&kp Q               &kp W           &kp E           &kp R   &kp T                                                              &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S           &kp D           &kp F   &kp G               &lt 1 LS(LG(S))      &new_behavior1            &kp H      &kp J  &kp K      &kp L    &new_behavior8
+&mt LEFT_SHIFT Z    &kp X           &kp C           &kp V   &lt 6 B             &new_behavior2       &new_behavior3            &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&new_behavior4      &new_behavior5  &new_behavior6  &trans  &mt LEFT_ALT SPACE  &lt 3 DELETE         &mt LEFT_SHIFT BACKSPACE  &kp ENTER                             &new_behavior7
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -187,7 +187,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp HOME END>;
+            sensor-bindings = <&inc_dec_kp END HOME>;
         };
 
         sub1 {
@@ -214,7 +214,7 @@
 
         MOUSE {
             bindings = <
-&trans  &kp PG_UP       &kp UP_ARROW    &kp PG_DN           &trans                                                      &trans         &trans    &trans    &kp LC(W)  &trans
+&trans  &kp HOME        &kp UP_ARROW    &kp END             &trans                                                      &trans         &trans    &trans    &kp LC(W)  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans              &trans                   &trans         &mkp MB5       &mkp MB4  &mkp MB3  &mkp MB2   &trans
 &trans  &trans          &trans          &trans              &kp LG(UP_ARROW)    &trans                   &trans         &kp LA(F4)     &mkp MB1  &trans    &trans     &trans
 &trans  &trans          &trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LC(PG_UP)  &kp LC(PG_DN)                                 &trans
