@@ -51,6 +51,21 @@
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <1 2>;
         };
+
+        cc {
+            bindings = <&kp LC(C)>;
+            key-positions = <12 13>;
+        };
+
+        cv {
+            bindings = <&kp LC(V)>;
+            key-positions = <25 24>;
+        };
+
+        cav {
+            bindings = <&cavve>;
+            key-positions = <2 3>;
+        };
     };
 
     macros {
