@@ -208,7 +208,7 @@
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END             &trans                                                      &trans         &trans    &trans    &kp LC(W)  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans              &trans                   &trans         &mkp MB5       &mkp MB4  &mkp MB3  &mkp MB2   &trans
-&trans  &trans          &trans          &trans              &kp LG(UP_ARROW)    &trans                   &trans         &kp LA(F4)     &mkp MB1  &trans    &trans     &trans
+&trans  &trans          &trans          &kp LG(UP_ARROW)    &trans              &trans                   &trans         &kp LA(F4)     &mkp MB1  &trans    &trans     &trans
 &trans  &trans          &trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LC(PG_UP)  &kp LC(PG_DN)                                 &trans
             >;
 
