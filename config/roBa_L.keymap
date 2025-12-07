@@ -116,7 +116,7 @@
             label = "NEW_BEHAVIOR2";
             #binding-cells = <0>;
             bindings =
-                <&kp RIGHT_BRACKET>,
+                <&lt 6 LEFT_BRACKET>,
                 <&kp NUHS>,
                 <&kp LS(RIGHT_BRACKET)>,
                 <&kp LS(NUHS)>;
@@ -168,7 +168,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NEW_BEHAVIOR9";
             #binding-cells = <0>;
-            bindings = <&kp LC(C)>, <&kp LC(V)>, <&cavve>;
+            bindings = <&mt LEFT_ALT LA(LC(TAB))>;
         };
     };
 
@@ -177,10 +177,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E           &kp R           &kp T                                                              &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S           &kp D           &kp F           &kp G               &lt 1 LS(LG(S))      &new_behavior1            &kp H      &kp J  &kp K      &kp L    &new_behavior8
-&mt LEFT_SHIFT Z    &kp X           &kp C           &kp V           &lt 6 B             &new_behavior2       &new_behavior3            &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&new_behavior4      &new_behavior5  &new_behavior6  &new_behavior9  &mt LEFT_ALT SPACE  &lt 3 DELETE         &mt LEFT_SHIFT BACKSPACE  &kp ENTER                             &new_behavior7
+&kp Q               &kp W           &kp E           &kp R           &kp T                                                       &kp Y      &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S           &kp D           &kp F           &kp G        &lt 1 LS(LG(S))      &new_behavior1            &kp H      &kp J  &kp K      &kp L    &new_behavior8
+&mt LEFT_SHIFT Z    &kp X           &kp C           &kp V           &kp B        &new_behavior2       &new_behavior3            &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&new_behavior4      &new_behavior5  &new_behavior6  &new_behavior9  &lt 5 SPACE  &lt 3 DELETE         &mt LEFT_SHIFT BACKSPACE  &kp ENTER                             &new_behavior7
             >;
 
             sensor-bindings = <&scroll_up_down>;
