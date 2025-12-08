@@ -116,7 +116,7 @@
             label = "NEW_BEHAVIOR2";
             #binding-cells = <0>;
             bindings =
-                <&lt 6 LEFT_BRACKET>,
+                <&lt 6 RIGHT_BRACKET>,
                 <&kp NUHS>,
                 <&kp LS(RIGHT_BRACKET)>,
                 <&kp LS(NUHS)>;
