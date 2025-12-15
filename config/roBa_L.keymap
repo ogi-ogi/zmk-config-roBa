@@ -166,7 +166,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NEW_BEHAVIOR8";
             #binding-cells = <0>;
-            bindings = <&lt 4 MINUS>, <&lt 1 LS(INT1)>;
+            bindings = <&lt 4 MINUS>, <&kp LS(INTERNATIONAL_1)>;
         };
 
         new_behavior9: new_behavior9 {
@@ -182,10 +182,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E           &kp R           &kp T                                                       &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&mt LCTRL A       &kp S           &kp D           &kp F           &kp G        &lt 1 LS(LG(S))      &new_behavior1            &kp H      &kp J  &kp K      &kp L    &new_behavior8
-&mt LEFT_SHIFT Z  &kp X           &kp C           &kp V           &kp B        &new_behavior2       &new_behavior3            &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&new_behavior4    &new_behavior5  &new_behavior6  &new_behavior9  &lt 3 SPACE  &lt 3 DELETE         &mt LEFT_SHIFT BACKSPACE  &kp ENTER                             &new_behavior7
+&mt LEFT_ALT Q    &kp W           &kp E           &kp R              &kp T                                                       &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&mt LCTRL A       &kp S           &kp D           &kp F              &kp G        &lt 1 LS(LG(S))      &new_behavior1            &kp H      &kp J  &kp K      &kp L    &new_behavior8
+&mt LEFT_SHIFT Z  &kp X           &kp C           &kp V              &kp B        &new_behavior2       &new_behavior3            &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&new_behavior4    &new_behavior5  &new_behavior6  &lt 2 LA(LC(TAB))  &lt 3 SPACE  &lt 1 DELETE         &mt LEFT_SHIFT BACKSPACE  &kp ENTER                             &new_behavior7
             >;
 
             sensor-bindings = <&scroll_up_down>;
