@@ -57,4 +57,17 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
+rrows_2 {
+        layers = <2>;
+        bindings =
+            <&kp LG(RIGHT_ARROW)>,
+            <&kp LG(LEFT_ARROW)>,
+            <&kp LG(UP_ARROW)>,
+            <&kp LG(DOWN_ARROW)>;
+
+        tick = <80>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
