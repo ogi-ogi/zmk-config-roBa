@@ -43,5 +43,17 @@
         tick = <80>;
         wait-ms = <5>;
         tap-ms = <5>;
+
+    arrows_1 {
+        layers = <1>;
+        bindings =
+            <&kp LS(RIGHT_ARROW)>,
+            <&kp LS(LEFT_ARROW)>,
+            <&kp LS(UP_ARROW)>,
+            <&kp LS(DOWN_ARROW)>;
+
+        tick = <80>;
+        wait-ms = <5>;
+        tap-ms = <5>;
     };
 };
