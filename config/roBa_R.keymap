@@ -43,6 +43,7 @@
         tick = <80>;
         wait-ms = <5>;
         tap-ms = <5>;
+    };
 
     arrows_1 {
         layers = <1>;
