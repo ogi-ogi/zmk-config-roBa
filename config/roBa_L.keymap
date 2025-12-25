@@ -15,7 +15,6 @@
     require-prior-idle-ms = <150>;
 };
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -73,6 +72,11 @@
         alt_DN {
             bindings = <&kp LA(DOWN_ARROW)>;
             key-positions = <31 32>;
+        };
+
+        c5 {
+            bindings = <&kp LC(KP_NUMBER_5)>;
+            key-positions = <21 20>;
         };
     };
 
