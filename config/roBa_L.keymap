@@ -189,7 +189,7 @@
 
         default_layer {
             bindings = <
-&mt LEFT_ALT Q    &kp W           &kp E           &kp R              &kp T                                                       &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&mt LEFT_ALT Q    &kp W           &lt 5 E         &kp R              &kp T                                                       &kp Y      &kp U  &lt 5 I    &kp O    &kp P
 &mt LCTRL A       &kp S           &kp D           &kp F              &kp G        &lt 1 LS(LG(S))      &new_behavior1            &kp H      &kp J  &kp K      &kp L    &new_behavior8
 &mt LEFT_SHIFT Z  &kp X           &kp C           &kp V              &kp B        &new_behavior2       &new_behavior3            &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &new_behavior4    &new_behavior5  &new_behavior6  &lt 2 LA(LC(TAB))  &lt 3 SPACE  &lt 1 DELETE         &mt LEFT_SHIFT BACKSPACE  &kp ENTER                             &new_behavior7
