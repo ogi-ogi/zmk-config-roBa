@@ -75,7 +75,7 @@
         };
 
         c5 {
-            bindings = <&kp LC(KP_NUMBER_5)>;
+            bindings = <&kp F4>;
             key-positions = <21 20>;
         };
     };
